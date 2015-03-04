@@ -10,7 +10,7 @@ echo ""
 echo "brew update && brew upgrade"
 brew update && brew upgrade
 curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
-sh mac 2>&1 | tee ~/laptop.log
+sh mac 2>&1 | tee ~/.logs/.laptop.log
 echo ""
 echo "updating ruby-build"
 cd ~/.rbenv/plugins/ruby-build && git pull
